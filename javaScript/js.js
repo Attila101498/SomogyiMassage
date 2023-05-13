@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 var fullscreenslider = function() {
-    $("section.main-heading").vegas({
+    $("div.main-heading").vegas({
         delay: 12000,
         slides: [
             {
