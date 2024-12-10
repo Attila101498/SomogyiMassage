@@ -484,16 +484,24 @@ h4 {
     height: 100%;
 }
 
-#cannabis {
-    background-color: rgba(39, 78, 31, .6);
+#dio {
+    background-color: rgba(125, 80, 80, .6);
+}
+
+#borsmenta {
+    background-color: rgba(27, 90, 45, .6);
+}
+
+#levendula {
+    background-color: rgba(145, 104, 183, .6);
 }
 
 #narancsFahej {
     background-color: rgba(197, 83, 12, .6);
 }
 
-#levendula {
-    background-color: rgba(145, 104, 183, .6);
+#fahejSzilva {
+    background-color: rgba(60, 57, 87, .6);
 }
 
 #szolo {
@@ -502,30 +510,6 @@ h4 {
 
 #granatAlma {
     background-color: rgba(120, 55, 43, .6);
-}
-
-#aloeVera {
-    background-color: rgba(122, 157, 27, .6);
-}
-
-#citrom {
-    background-color: rgba(92, 163, 7, .6);
-}
-
-#paprika {
-    background-color: rgba(186, 62, 72, .6);
-}
-
-#borsmenta {
-    background-color: rgba(27, 90, 45, .6);
-}
-
-#kokuszCsoki {
-    background-color: rgba(26, 33, 41, .6);
-}
-
-#frangipani {
-    background-color: rgba(197, 99, 89, .6);
 }
 
 .box:hover .boxOverlay {
@@ -871,12 +855,16 @@ h4 {
 
 /* Small Size */
 @media screen and (max-width: 576px) {
-    .img_7 {
-        background-image: url(".././img/gallery_pic_7B.jpg");
+    .img_3 {
+        background-image: url(".././img/gallery_pic_3B.jpg");
     }
 
     .img_6 {
         background-image: url(".././img/gallery_pic_6B.jpg");
+    }
+
+    .img_7 {
+        background-image: url(".././img/gallery_pic_7B.jpg");
     }
 
     .image-gallery {
@@ -930,32 +918,15 @@ h4 {
 
 .card img {
     border-radius: 0 !important;
+    padding: 10px;
 }
 
-.secondary {
-    display: none;
+.h-100 {
+    height: auto !important;
 }
 
-@media screen and (max-width: 992px) {
-    .main {
-        display: none;
-    }
-
-    .secondary {
-        display: block;
-    }
-
-    .card img {
-        padding: 10px;
-    }
-
-    .h-100 {
-        height: auto !important;
-    }
-
-    .card.arak {
-        margin: 10px;
-    }
+.card.arak {
+    margin: 10px;
 }
 
 .card.arak:hover {
@@ -1036,10 +1007,6 @@ h4 {
     padding: 100px 50px;
 }
 
-.alkalom {
-    margin-top: 20px;
-}
-
 @media screen and (max-width: 1333px) {
     .berlet {
         background-position: center;
@@ -1061,12 +1028,6 @@ h4 {
 @media screen and (max-width: 302px) {
     .berletPrice {
         font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .alkalom {
-        font-size: 30px;
     }
 }
 
@@ -1230,6 +1191,10 @@ ion-icon {
 #staticBackdrop,
 #errorStaticBackdrop {
     margin-top: 50px;
+}
+
+.modal-header {
+    padding: 2.5rem 1rem 1rem 1rem;
 }
 
 .modal-title {
