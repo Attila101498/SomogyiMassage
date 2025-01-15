@@ -27,11 +27,13 @@
 
 body {
     overflow-x: hidden !important;
+    background: #3b553a;
+    color: #fff;
 }
 
 ::selection {
     color: #fff;
-    background: #ff6a1f;
+    background: #9daa33;
 }
 
 #topcont {
@@ -50,12 +52,12 @@ html {
 h1 {
     margin-bottom: 30px;
     text-align: center;
-    color: #ff6a1f;
+    color: #9daa33;
     font-weight: bold;
 }
 
 h4 {
-    color: #ff6a1f;
+    color: #9daa33;
 }
 
 
@@ -79,7 +81,7 @@ h4 {
 .topnav {
     overflow: hidden;
     font-size: 17px;
-    background-color: #232c38;
+    background: #232c38;
     padding-bottom: 10px;
     margin-bottom: 0px;
     text-align: right;
@@ -93,7 +95,7 @@ h4 {
     text-decoration: none;
     margin-top: 15px;
     margin-left: 15px;
-    color: #17bf89;
+    color: #9daa33;
     font-size: 22px;
     font-weight: bold;
 }
@@ -104,7 +106,7 @@ h4 {
     text-align: center;
     padding: 5px;
     text-decoration: none;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-left: 20px;
     font-weight: bold;
     margin-right: 15px;
@@ -112,7 +114,7 @@ h4 {
 }
 
 .topnav a:hover {
-    color: #17bf89;
+    color: #9daa33;
 }
 
 .topnav a.icon {
@@ -124,7 +126,7 @@ h4 {
 .bar1, .bar2, .bar3 {
     width: 30px;
     height: 5px;
-    background-color: #fff;
+    background: #fff;
     margin: 6px 0;
     transition: .6s;
 }
@@ -204,7 +206,7 @@ h4 {
     }
 
     .topnav a.icon {
-        margin-top: 14px;
+        margin-top: 12px;
         margin-left: 0;
     }
 }
@@ -227,7 +229,7 @@ h4 {
 }
 
 .vegas-wrapper {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, .2);
 }
 
 .firstA {
@@ -235,7 +237,7 @@ h4 {
 }
 
 .firstA:hover {
-    color: #a63e0a !important;
+    color: #798618 !important;
 }
 
 #vegasSliderInner h1 {
@@ -250,7 +252,7 @@ h4 {
 
 #vegasSliderInner a {
     line-height: 6.875rem;
-    color: #ff6a1f;
+    color: #9daa33;
     font-size: 1.5rem;
     letter-spacing: 1px;
     text-decoration: none !important;
@@ -394,18 +396,23 @@ h4 {
 /* Bemutatkozás */
 .name {
     font-family: "ZenAntique", serif;
-    color: #236ebc;
+    color: #77a4e1;
 }
 
 .name2 {
     font-family: "ZenAntique", serif;
     margin-bottom: 20px;
-    color: #17bf89;
+    color: #77a4e1;
 }
 
 .text {
     text-align: justify; 
     font-size: 19px;
+}
+
+.text a {
+    text-decoration: none;
+    color: #77a4e1;
 }
 
 
@@ -420,7 +427,7 @@ h4 {
     left: -10%;
     border-bottom: 0;
     font-size: 50px;
-    color: #ff6a1f;
+    color: #9daa33;
     opacity: .6 !important;
     transition: .3s;
 }
@@ -429,7 +436,7 @@ h4 {
     right: -10%;
     border-bottom: 0;
     font-size: 50px;
-    color: #ff6a1f;
+    color: #9daa33;
     opacity: .6 !important;
     transition: .3s;
 }
@@ -438,12 +445,12 @@ h4 {
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-    color: #ff6a1f !important;
+    color: #9daa33 !important;
     opacity: 1 !important;
 }
 
 .flickity-button {
-    background: rgba(23,192,137,.7) !important;
+    background: rgba(157, 170, 51, .7) !important;
     color: #fff !important;
 }
 
@@ -484,48 +491,36 @@ h4 {
     height: 100%;
 }
 
-#cannabis {
-    background-color: rgba(39, 78, 31, .6);
-}
-
-#narancsFahej {
-    background-color: rgba(197, 83, 12, .6);
-}
-
-#levendula {
-    background-color: rgba(145, 104, 183, .6);
-}
-
-#szolo {
-    background-color: rgba(67, 104, 130, .6);
-}
-
-#granatAlma {
-    background-color: rgba(120, 55, 43, .6);
-}
-
-#aloeVera {
-    background-color: rgba(122, 157, 27, .6);
-}
-
-#citrom {
-    background-color: rgba(92, 163, 7, .6);
-}
-
-#paprika {
-    background-color: rgba(186, 62, 72, .6);
+#dio {
+    background: rgba(125, 80, 80, .6);
 }
 
 #borsmenta {
-    background-color: rgba(27, 90, 45, .6);
+    background: rgba(27, 90, 45, .6);
 }
 
-#kokuszCsoki {
-    background-color: rgba(26, 33, 41, .6);
+#levendula {
+    background: rgba(145, 104, 183, .6);
 }
 
-#frangipani {
-    background-color: rgba(197, 99, 89, .6);
+#narancsFahej {
+    background: rgba(197, 83, 12, .6);
+}
+
+#fahejSzilva {
+    background: rgba(60, 57, 87, .6);
+}
+
+#water {
+    background: rgba(0, 153, 175, .6);
+}
+
+#szolo {
+    background: rgba(67, 104, 130, .6);
+}
+
+#granatAlma {
+    background: rgba(120, 55, 43, .6);
 }
 
 .box:hover .boxOverlay {
@@ -710,11 +705,11 @@ h4 {
     height: 12px;
     opacity: 1;
     background: transparent;
-    border: 2px solid #17bf89;
+    border: 2px solid #77a4e1;
 }
 
 .flickity-page-dots .dot.is-selected {
-    background-color: #17bf89;
+    background: #77a4e1;
 }
 
 @media screen and (max-width: 576px) {
@@ -765,6 +760,7 @@ h4 {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    outline: none;
 }
 
 .image-gallery a ion-icon {
@@ -785,13 +781,15 @@ h4 {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .4);
     opacity: 0;
     transition: opacity .5s;
 }
 
 .image-gallery a:hover ion-icon,
-.image-gallery a:hover::before {
+.image-gallery a:hover::before,
+.image-gallery a:focus ion-icon,
+.image-gallery a:focus::before {
     opacity: 1;
 }
 
@@ -871,12 +869,16 @@ h4 {
 
 /* Small Size */
 @media screen and (max-width: 576px) {
-    .img_7 {
-        background-image: url(".././img/gallery_pic_7B.jpg");
+    .img_3 {
+        background-image: url(".././img/gallery_pic_3B.jpg");
     }
 
     .img_6 {
         background-image: url(".././img/gallery_pic_6B.jpg");
+    }
+
+    .img_7 {
+        background-image: url(".././img/gallery_pic_7B.jpg");
     }
 
     .image-gallery {
@@ -910,7 +912,7 @@ h4 {
 }
 
 .timer {
-    color: #ff6a1f;
+    color: #82373c;
 }
 
 .timer ion-icon {
@@ -923,59 +925,33 @@ h4 {
 }
 
 .card.arak {
-    box-shadow: 0 1px 10px 0 rgb(0 0 0 /30%) !important;
-    transition: .5s;
+    box-shadow: none !important;
+    margin: 10px;
     margin-bottom: 30px !important;
 }
 
 .card img {
     border-radius: 0 !important;
+    padding: 10px;
 }
 
-.secondary {
-    display: none;
-}
-
-@media screen and (max-width: 992px) {
-    .main {
-        display: none;
-    }
-
-    .secondary {
-        display: block;
-    }
-
-    .card img {
-        padding: 10px;
-    }
-
-    .h-100 {
-        height: auto !important;
-    }
-
-    .card.arak {
-        margin: 10px;
-    }
-}
-
-.card.arak:hover {
-    cursor: pointer;
-    box-shadow: none !important;
+.h-100 {
+    height: auto !important;
 }
 
 .time {
-    color: #ff6a1f;
+    color: #82373c;
 }
 
 .card-title {
-    color: #236ebc;
+    color: #386c5f;
     font-weight: 800;
     margin-top: 20px;
 }
 
 .list-group {
     text-decoration: none;
-    color: #17bf89;
+    color: #82373c;
     font-weight: 400;
     border: none !important;
 }
@@ -993,9 +969,9 @@ h4 {
 
 .card-footer {
     text-decoration: none;
-    background-color: rgba(0,0,0,0) !important;
+    background: rgba(0,0,0,0) !important;
     border: none !important;
-    color: #236ebc;
+    color: #386c5f;
     font-weight: 800;
 }
 
@@ -1014,36 +990,11 @@ h4 {
 }
 
 .card_bg1 {
-    background-color: rgba(23,192,137,.8) !important;
+    background: rgba(56, 108, 95, .9) !important;
 }
 
 .card_bg2 {
-    background-color: rgba(255,106,31,.8) !important;
-}
-
-.card_bg3 {
-    background-color: rgba(35,110,188,.8) !important;
-}
-
-.card_bg4 {
-    background-color: rgba(8,200,136,.8) !important;
-}
-
-.berlet {
-    background-image: url(../img/berletek_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 50px;
-}
-
-.alkalom {
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 1333px) {
-    .berlet {
-        background-position: center;
-    }
+    background: rgba(130, 55, 60, .9) !important;
 }
 
 @media (min-width: 992px) and (max-width: 998px) {
@@ -1061,12 +1012,6 @@ h4 {
 @media screen and (max-width: 302px) {
     .berletPrice {
         font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .alkalom {
-        font-size: 30px;
     }
 }
 
@@ -1105,13 +1050,13 @@ button:focus {
 }
 
 .accordion.odd {
-    background-color: #17bf89;
-    box-shadow: -1px 5px 5px -1px rgb(103, 230, 188);
+    background: #77a4e1;
+    box-shadow: -1px 3px 5px -1px #77a4e1;
 }
 
 .accordion.even {
-    background-color: #236ebc;
-    box-shadow: -1px 5px 5px -1px rgb(154, 170, 214);
+    background: #386c5f;
+    box-shadow: -1px 3px 5px -1px #386c5f;
 }
 
 .active,
@@ -1140,7 +1085,6 @@ button:focus {
 .panel p {
     margin: 20px;
     font-size: 18px;
-    color: #000;
 }
 
 
@@ -1162,14 +1106,14 @@ ion-icon {
 
 .facinst {
     opacity: .8 !important;
-    color: #17bf89;
+    color: #fff;
     font-size: 45px;
     transition: .3s;
 }
 
 .facinst:hover {
     text-decoration: none;
-    color: #17bf89;
+    color: #fff;
     opacity: 1 !important;
 }
 
@@ -1184,15 +1128,14 @@ ion-icon {
 }
 
 .contact {
-    color: #ff6a1f; 
+    color: #9daa33; 
     font-size: 20px; 
     font-weight: bold;
 }
 
 .contact a {
-    color: #ff6a1f !important;
+    color: #9daa33 !important;
     text-decoration: none !important;
-    vertical-align: text-top;
 }
 
 .contact ion-icon {
@@ -1201,28 +1144,30 @@ ion-icon {
 }
 
 .form-control {
-    border: 1px solid #c5cbd1 !important;
+    border: 1px solid #454545 !important;
     border-radius: 0 !important;
     transition: .3s;
 }
 
 .form-control:focus {
-    box-shadow: none !important;
+    box-shadow: 0 0 0 .075rem rgb(157, 170, 51) !important;
     outline: none !important;
-    border: 1px solid #14a577 !important;
+    border: 1px solid #9daa33 !important;
 }
 
 .btn-info {
     outline: none;
     border: none !important;
-    background-color: #ff6a1f !important;
+    background: #9daa33 !important;
     opacity: .8 !important;
     transition: .3s;
 }
 
-.btn-info:hover {
+.btn-info:hover,
+.btn-info:focus {
     cursor: pointer;
     opacity: 1 !important;
+    box-shadow: 0 0 0 .075rem #9daa33 !important;
 }
 
 
@@ -1233,21 +1178,28 @@ ion-icon {
 }
 
 .modal-title {
-    color: #236ebc;
+    color: #386c5f;
 }
 
-.close:hover {
+.modal-body {
+    color: #000;
+}
+
+.close:hover,
+.close:focus {
     color: #e71919;
 }
 
 .btn-secondary {
-    background-color: #236ebc !important;
-    border: 1px solid #236ebc !important;
+    background: #386c5f !important;
+    border: 1px solid #386c5f !important;
     color: #fff !important;
     opacity: .8;
     transition: .2s;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
     opacity: 1;
+    box-shadow: 0 0 0 .075rem #386c5f !important;
 }

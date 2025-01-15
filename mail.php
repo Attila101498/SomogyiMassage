@@ -9,11 +9,10 @@
     }
 
     if(!$error) {
-        $to = "somogyiandras12@somogyimasszazs.hu";
+        $to = "somogyim@somogyimasszazs.hu";
         $subject = "Üzeneted érkezett tőle: $name";
-        $txt = "$message";
         $headers = "From: $email_address";
 
-        mail($to,$subject,$txt,$headers);
+        mail($to,$subject,$message,$headers);
     }
 ?>

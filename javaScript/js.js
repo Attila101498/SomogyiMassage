@@ -22,8 +22,8 @@ var fullscreenslider = function() {
         slides: [
             {
                 src: './img/topBg.jpg',
-                text: '<h1 style="font-weight: normal;">“A masszázs nem luxus. <br> Ez egy út az egészségesebb, \n\
-                <br> boldogabb élethez.”</h1> <br> <a href="#kapcsolat" class="firstA">Kérj időpontot!</a>'
+                text: '<h1 style="font-weight: normal;">“A relaxáció új dimenziója. <br> Gyere és tapasztald meg! \n\
+                <br> Mert megérdemled.”</h1> <br> <a href="#kapcsolat" class="firstA">Kérj időpontot még ma!</a>'
             }
         ], animation: 'kenburns',
         walk: function (index, slideSettings) {
