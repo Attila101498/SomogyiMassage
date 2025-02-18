@@ -1,1 +1,1 @@
-I made this site for one of my friends who works in massage. The site is fully responsive, it was created with the latest version of Bootstrap at the time. In addition, we can find Jquery Plugins on the site.
+I made this site for one of my friends who works in massage. The site is fully responsive, it was created with the latest version of Bootstrap at the time. In addition, we can find Jquery Plugins on the site, on the domain, the email sending works with PHP. The site also can be found here: https://somogyimasszazs.hu/. I also manage the domain of the site.

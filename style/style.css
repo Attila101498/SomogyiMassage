@@ -49,11 +49,30 @@ html {
 
 
 /* Címsorok */
-h1 {
+h1:not(.kedvezmeny) {
     margin-bottom: 30px;
     text-align: center;
     color: #9daa33;
     font-weight: bold;
+}
+
+h1.subtitle {
+    margin-bottom: 0;
+}
+
+h1.kedvezmeny {
+    text-align: center;
+    color: #77a4e1;
+    font-weight: bold;
+    margin: 25px 0 20px 0;
+}
+
+h3 {
+    text-align: center;
+    color: #9daa33;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 30px;
 }
 
 h4 {
@@ -145,21 +164,28 @@ h4 {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 985px) {
     .topnav a {
         margin-left: 10px;
         margin-right: 5px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 855px) {
     .topnav a {
         margin-left: 5px;
         margin-right: 5px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 817px) {
+    .topnav a {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -460,10 +486,6 @@ h4 {
     font-size: 20px !important;
 }
 
-.box:hover {
-    cursor: pointer;
-}
-
 .boxImg {
     display: block;
     width: 100%;
@@ -472,12 +494,12 @@ h4 {
 
 .boxOverlay {
     position: absolute;
-    bottom: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
     overflow: hidden;
     width: 100%;
-    height: 0;
+    height: 100%;
     transition: .5s ease;
 }
 
@@ -492,52 +514,54 @@ h4 {
 }
 
 #dio {
-    background: rgba(125, 80, 80, .6);
+    background: rgba(125, 80, 80, .7);
 }
 
 #borsmenta {
-    background: rgba(27, 90, 45, .6);
+    background: rgba(27, 90, 45, .7);
 }
 
 #levendula {
-    background: rgba(145, 104, 183, .6);
+    background: rgba(145, 104, 183, .7);
 }
 
 #narancsFahej {
-    background: rgba(197, 83, 12, .6);
+    background: rgba(197, 83, 12, .7);
 }
 
 #fahejSzilva {
-    background: rgba(60, 57, 87, .6);
+    background: rgba(60, 57, 87, .7);
 }
 
 #water {
-    background: rgba(0, 153, 175, .6);
+    background: rgba(0, 153, 175, .7);
 }
 
 #szolo {
-    background: rgba(67, 104, 130, .6);
+    background: rgba(67, 104, 130, .7);
 }
 
 #granatAlma {
-    background: rgba(120, 55, 43, .6);
-}
-
-.box:hover .boxOverlay {
-    bottom: 0;
-    height: 100%;
+    background: rgba(120, 55, 43, .7);
 }
 
 .boxText {
     color: #fff;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    font-size: 18px;
+    padding: 5px;
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .boxOverlay .boxText {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .boxOverlay .boxText {
+        font-size: 14px;
+    }
 }
 
 /*
@@ -642,7 +666,7 @@ h4 {
     }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
         display: block;
     }
@@ -701,8 +725,8 @@ h4 {
 }
 
 .flickity-page-dots .dot {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     opacity: 1;
     background: transparent;
     border: 2px solid #77a4e1;
@@ -736,7 +760,7 @@ h4 {
 /* Gallery */
 .image-gallery {
     margin: auto;
-    padding: 0 1.5rem;
+    padding: 0;
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -911,22 +935,12 @@ h4 {
     border-radius: 0 !important;
 }
 
-.timer {
+.priceTitle {
     color: #82373c;
-}
-
-.timer ion-icon {
-    font-size: 2rem;
-    vertical-align: middle;
-}
-
-.timer span {
-    vertical-align: middle;
 }
 
 .card.arak {
     box-shadow: none !important;
-    margin: 10px;
     margin-bottom: 30px !important;
 }
 
@@ -935,25 +949,22 @@ h4 {
     padding: 10px;
 }
 
-.h-100 {
-    height: auto !important;
-}
-
-.time {
-    color: #82373c;
-}
-
 .card-title {
     color: #386c5f;
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .list-group {
     text-decoration: none;
     color: #82373c;
-    font-weight: 400;
     border: none !important;
+    padding: 0 10px;
+    font-size: 20px;
+    text-align: left;
 }
 
 .list-group li {
@@ -967,18 +978,65 @@ h4 {
     vertical-align: text-top;
 }
 
+.cardBodyH3 {
+    font-size: 24px;
+    text-align: left;
+    color: #82373c;
+    font-weight: bold;
+    margin: 20px 10px 10px 10px;
+}
+
 .card-footer {
     text-decoration: none;
     background: rgba(0,0,0,0) !important;
     border: none !important;
     color: #386c5f;
-    font-weight: 800;
+    padding: 0 10px;
 }
 
-@media screen and (max-width: 767px) {
-    .card.arak:hover {
-        box-shadow: 0 1px 10px 0 rgb(0 0 0 /30%) !important;
-    }
+.card-footer ion-icon {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.card-footer span {
+    vertical-align: middle;
+}
+
+.card-footer .special {
+    font-size: 22px;
+}
+
+/* Különleges ajánlatok */
+.card_bg1 .priceTitle, .card_bg2 .priceTitle {
+    color: #fff;
+}
+
+.card_bg1 .card-title, .card_bg2 .card-title {
+    color: #fff;
+    font-weight: 500;
+}
+
+.card_bg1 .cardBodyH3, .card_bg2 .cardBodyH3 {
+    color: #9daa33;
+    font-style: normal;
+}
+
+.card_bg1 ul li {
+    background: rgba(56, 108, 95, .9) !important;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card_bg2 ul li {
+    background: rgba(130, 55, 60, .9) !important;
+    color: #fff;
+    font-weight: 500;
+}
+
+.card_bg1 .card-footer, .card_bg2 .card-footer {
+    color: #fff;
+    padding-bottom: 5px;
 }
 
 
@@ -1020,16 +1078,6 @@ h4 {
 button:focus {
     border: none;
     outline: none;
-}
-
-.row.gyik {
-    padding: 0 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .row.gyik {
-        padding: 0;
-    }
 }
 
 .accordion {
