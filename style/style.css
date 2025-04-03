@@ -449,6 +449,17 @@ h4 {
     margin-left: auto;
 }
 
+a.carousel-item {
+    transition: transform .3s ease;
+    
+}
+
+a.carousel-item:hover,
+a.carousel-item:focus {
+    transform: scale(1.03);
+    outline: none;
+}
+
 .carousel-control-prev {
     left: -10%;
     border-bottom: 0;
