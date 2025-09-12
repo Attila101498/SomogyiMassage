@@ -49,7 +49,7 @@ html {
 
 
 /* Címsorok */
-h1:not(.kedvezmeny) {
+h1 {
     margin-bottom: 30px;
     text-align: center;
     color: #9daa33;
@@ -58,13 +58,6 @@ h1:not(.kedvezmeny) {
 
 h1.subtitle {
     margin-bottom: 0;
-}
-
-h1.kedvezmeny {
-    text-align: center;
-    color: #77a4e1;
-    font-weight: bold;
-    margin: 25px 0 20px 0;
 }
 
 h3 {
@@ -538,10 +531,6 @@ a.carousel-item:focus {
 
 #narancsFahej {
     background: rgba(197, 83, 12, .7);
-}
-
-#fahejSzilva {
-    background: rgba(60, 57, 87, .7);
 }
 
 #water {
