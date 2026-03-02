@@ -484,6 +484,10 @@ a.carousel-item:focus {
     color: #fff !important;
 }
 
+.flickity-button:focus {
+    box-shadow:0 0 0 4px #9daa33;
+}
+
 .box, .box2 {
     position: relative;
     font-weight: 500 !important;
